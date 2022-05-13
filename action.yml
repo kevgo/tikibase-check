@@ -10,5 +10,5 @@ runs:
       shell: bash
 
 branding:
-  icon: smile
-  color: yellow
+  icon: check-circle
+  color: green
