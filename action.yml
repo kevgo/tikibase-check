@@ -1,0 +1,14 @@
+name: tikibase-check
+description: run `tikibase check` on your repo content
+author: Kevin Goslar
+runs:
+  using: "composite"
+  steps:
+    - run: curl -fsSL https://github.com/kevgo/tikibase/releases/latest/download/tikibase_linux_64.tar.gz --output - | tar -xzC ..
+      shell: bash
+    - run: ../tikibase check
+      shell: bash
+
+branding:
+  icon: smile
+  color: yellow
